@@ -1,0 +1,430 @@
+[
+  {
+    "id": "s01-drawer",
+    "orient": "landscape",
+    "chars": false,
+    "scene": "Top-down close view looking straight down into an open wooden desk drawer, lit by one soft diagonal beam of early-morning sunlight with floating dust motes. Inside the drawer, centered: a pastel mint-green instant camera (rounded boxy body, large round lens set in a cream ring, coral-red shutter button, small flash window at the top right, cream braided strap) lying next to a small rectangular instant-film box still sealed in shiny silver foil wrap. Around them: two pencils, a folded paper note with tiny hand-drawn doodles (a flower, a fork and knife, a paper plane, a little tower, a ring), a dried flower. Warm wood grain, cozy and quiet."
+  },
+  {
+    "id": "s02-load",
+    "orient": "landscape",
+    "scene": "Close-up of a young woman's hands with mustard-yellow knit cardigan sleeves holding the pastel mint-green instant camera from the back; the camera's back door is open and she is sliding a dark rectangular instant-film pack into it; torn silver foil wrapper on the wooden desk below; soft morning window light from the left; shallow depth of field. Only hands and camera visible, no face."
+  },
+  {
+    "id": "s03-window",
+    "orient": "landscape",
+    "chars": false,
+    "scene": "View through a large apartment window in soft early-morning light: a bare cherry-tree branch close to the glass with many tiny closed pink buds and no flowers at all; pale blue and cream sky; distant rooftops softly out of focus; white window frame on the left edge and a sheer cream curtain on the right edge. Calm, late winter."
+  },
+  {
+    "id": "s03-window-dream",
+    "orient": "landscape",
+    "chars": false,
+    "base": "art/s03-window.png",
+    "after": [
+      "s03-window"
+    ],
+    "scene": "Same window and branch, but the branch is now in full bloom with pale pink cherry blossoms and a few petals drifting, and everything outside the window is rendered as a dreamy imagined drawing: visible soft pencil sketch lines and loose transparent watercolor washes on paper texture, pastel pink and cream, slightly glowing, like a daydream."
+  },
+  {
+    "id": "s04-frames",
+    "orient": "landscape",
+    "chars": false,
+    "scene": "Straight-on view of a warm cream apartment wall in morning light with a neat horizontal row of five EMPTY light-wood picture frames (white mats, nothing inside) hanging in the upper middle, above the back of a coral-colored sofa with a mustard cushion and a cream knitted throw; soft golden sunlight patches on the wall and the soft leaf shadow of a monstera plant. Plenty of wall space around the frames."
+  },
+  {
+    "id": "s04-frames-dream",
+    "orient": "landscape",
+    "chars": false,
+    "base": "art/s04-frames.png",
+    "after": [
+      "s04-frames"
+    ],
+    "scene": "Same wall, sofa and five frames, but inside each frame there is now a dreamy pencil-sketch and loose watercolor drawing of an imagined photo: 1 cherry blossoms, 2 a candlelit dinner table for two, 3 an airplane above clouds, 4 the Eiffel Tower at sunset, 5 two hands wearing rings. The drawings glow softly; the rest of the room stays exactly as it is."
+  },
+  {
+    "id": "s05-fridge",
+    "orient": "landscape",
+    "chars": false,
+    "scene": "Close view of a cream retro refrigerator door in a cozy small kitchen in morning light: a cut-out magazine clipping showing a small candlelit restaurant table (only blurred unreadable lines instead of text) held up by colorful round magnets, a small takeout menu, a child-like doodle of a heart; a potted herb and a wall tile edge at the side."
+  },
+  {
+    "id": "s05-restaurant-dream",
+    "orient": "landscape",
+    "chars": false,
+    "scene": "A small cozy restaurant table for two by a window at night with a lit candle, two wine glasses, folded napkins and a little vase with one flower, warm string lights in the background; rendered as a dreamy imagined drawing with visible soft pencil sketch lines and loose transparent watercolor washes on paper texture, warm amber and rose."
+  },
+  {
+    "id": "s06-map",
+    "orient": "landscape",
+    "chars": false,
+    "scene": "A cozy bedroom corner in morning light: a large vintage world map pinned on a sage-green wall with a few colorful pushpins (in France and in Japan) and a red string between them; below it a vintage mint-and-cream suitcase with travel stickers sticking out from under a bed with a cream duvet; a small paper airplane on the bed."
+  },
+  {
+    "id": "s07-paris-dream",
+    "orient": "landscape",
+    "scene": "Paris at sunset imagined as a dreamy pencil sketch with loose transparent watercolor washes on paper texture: peach, pink and lilac sky, Haussmann rooftops with chimneys, the Eiffel Tower on the right; two small figures seen from behind holding hands under the tower: the girl with the short black bob in the mustard cardigan and the young man with glasses in the navy sweater; a paper airplane gliding across the sky. Visible pencil lines everywhere, soft and romantic."
+  },
+  {
+    "id": "s07-desk-back",
+    "orient": "landscape",
+    "scene": "Point of view from a few steps behind the young man as he sits at his wooden desk by the big sunny window, his back to the viewer, typing on a laptop; desk lamp, mustard mug, a few books; outside the window the bare cherry branch with tiny closed buds; golden morning light, soft rim light on his messy hair. Medium shot, him on the left third, window and sunlight around him."
+  },
+  {
+    "id": "s08-hand-ring",
+    "orient": "landscape",
+    "chars": false,
+    "scene": "Close-up of a young man's relaxed hand resting on a wooden desk beside a laptop keyboard and a mustard mug in golden morning light; navy sweater cuff; on his ring finger there is a delicate ring drawn only as glowing pencil-sketch lines in white and gold, as if imagined (the only sketched element in the picture)."
+  },
+  {
+    "id": "s10-expiry",
+    "orient": "landscape",
+    "chars": false,
+    "scene": "Close-up of the small instant-film box (silver foil half torn open, cream cardboard underneath) standing on a wooden shelf; on its side a small blank white rectangular label area with a red ink border (leave it completely empty, no writing); beside it a wall calendar with blank pages lifting slightly in a draft, and a round wall clock softly out of focus behind; morning light turning slightly cooler."
+  },
+  {
+    "id": "s11-her-raise",
+    "orient": "landscape",
+    "scene": "Over-the-shoulder view from behind the young woman (short black bob, mustard-yellow cardigan) in the sunny living room as she raises the pastel mint-green instant camera to her eye with both hands, pointing it at the young man who sits at his desk by the bright window with his back to her, typing. Warm morning light, her face not visible, only the back of her head, shoulders and hands with the camera on the right side of the frame."
+  },
+  {
+    "id": "s12-turn-smile",
+    "orient": "landscape",
+    "scene": "Medium shot from her point of view, at eye level: the young man has just turned around in his wooden desk chair toward the viewer with a warm, slightly surprised, candid smile; morning sunlight from the window behind him creates a soft golden rim light on his messy black hair and round glasses; navy sweater; laptop and mug on the desk behind him. Him centered, looking straight at the viewer."
+  },
+  {
+    "id": "p01-laugh",
+    "orient": "portrait",
+    "scene": "An instant-photo style candid portrait with on-camera flash look (slightly overexposed highlights, warm tones, soft vignette): the young man laughing at his desk, head tilted back a little, eyes squeezed with joy, messy hair, round glasses, navy sweater; the sunny window behind him."
+  },
+  {
+    "id": "s14-hug",
+    "orient": "landscape",
+    "scene": "Selfie point of view from the camera held at arm's length: the young man pulls the young woman into a big hug from behind in the sunny living room, his cheek pressed against hers; she holds the mint instant camera out toward the viewer with one arm; both laughing with eyes nearly closed; her black bob slightly messy; warm morning light and the coral sofa behind them."
+  },
+  {
+    "id": "p02-selfie",
+    "orient": "portrait",
+    "scene": "An instant-photo style selfie with flash look: the young woman and the young man squeezed cheek to cheek, laughing, she squints with joy, his glasses slightly crooked, slightly tilted framing, a little motion blur, warm living-room light behind."
+  },
+  {
+    "id": "s16-chest",
+    "orient": "landscape",
+    "scene": "The young woman alone by the sunny window of the living room, pressing a small instant photo against her chest with both hands, eyes closed, a soft happy smile, morning sunlight on her face and bob haircut, dust motes floating. Medium shot, her slightly left of center."
+  },
+  {
+    "id": "s17-hands-warm",
+    "orient": "landscape",
+    "chars": false,
+    "scene": "Close-up of a young woman's hands cupping a small instant photo between her palms, warm golden light glowing out between her fingers, mustard-yellow knit cardigan sleeves; soft creamy bokeh background of a sunny room."
+  },
+  {
+    "id": "s18-dance",
+    "orient": "landscape",
+    "scene": "Wide shot of the sunny living room with the coral sofa and the row of five empty frames: the couple dancing wildly and laughing, she spins with both arms up, he does a goofy dance move, a pillow has burst and soft white feathers float everywhere in the sunbeams; the mint instant camera swings on its strap from her wrist. Joyful, full of motion."
+  },
+  {
+    "id": "s19-couch-doodle",
+    "orient": "landscape",
+    "scene": "On the coral sofa in warm afternoon light, the young woman, smiling mischievously, draws on a small instant photo with a white marker pen while the young man leans against her shoulder laughing; a few instant photos lie on the sofa cushion; cozy medium shot."
+  },
+  {
+    "id": "s20-sunrise",
+    "orient": "landscape",
+    "scene": "A grassy hilltop at the exact moment of sunrise above a misty city far below: the sun just peeking over the horizon with radiant golden rays and lens glow; the young man stands in silhouette on the left looking at the sun, the young woman on the right in silhouette raising the instant camera toward him; both in light hiking jackets; sky from deep indigo at the top to pink and gold at the horizon."
+  },
+  {
+    "id": "p03-sunrise",
+    "orient": "portrait",
+    "scene": "An instant photo: the young man in near silhouette on a grassy hilltop against a brilliant golden sunrise, sun flare beside him, misty city far below, he raises one hand to wave at the camera."
+  },
+  {
+    "id": "s21-rain",
+    "orient": "landscape",
+    "scene": "Heavy rain on a tree-lined path in a city park in the late afternoon: the young man holds his open jacket over the young woman's head like a little roof as they walk close together toward the viewer; she is crying a little, he looks at her tenderly; wet ground with reflections, cool blue-green light with warm glows from park lamps; raindrops visible."
+  },
+  {
+    "id": "s22-mugs",
+    "orient": "landscape",
+    "chars": false,
+    "scene": "A small round kitchen table by a window in soft morning light: two mugs side by side, one navy blue and one mustard yellow, with gentle steam, a plate with toast, a little vase with a sprig; calm everyday morning; the window frame and a plant at the edges."
+  },
+  {
+    "id": "p04-mugs",
+    "orient": "portrait",
+    "chars": false,
+    "scene": "An instant photo of two mugs side by side on a sunny kitchen table, one navy and one mustard yellow, steam rising, soft morning light, slightly tilted framing."
+  },
+  {
+    "id": "s23-mirror",
+    "orient": "landscape",
+    "chars": false,
+    "scene": "A bathroom mirror above a white sink in soft morning light, the mirror reflecting a blurry warm room; three square pastel sticky notes with tiny doodled hearts stuck near the mirror's edge; two toothbrushes in a cup, a small plant; lots of empty mirror surface."
+  },
+  {
+    "id": "s24-eye",
+    "orient": "landscape",
+    "scene": "Extreme close-up of the young woman's eye and brow looking through the small viewfinder eyepiece at the back of the mint-green instant camera, dark brown iris with a warm catchlight, black bangs touching the brow, the camera edge in the lower part of the frame, soft warm light, shallow focus."
+  },
+  {
+    "id": "s25-funny",
+    "orient": "landscape",
+    "scene": "Medium close-up from her point of view: the young man on the coral sofa makes a silly funny face straight at the camera (crossed eyes, tongue slightly out, glasses askew, hair messy), playful, warm afternoon light."
+  },
+  {
+    "id": "p05-funny",
+    "orient": "portrait",
+    "scene": "An instant photo close-up with flash look: the young man making a silly face at the camera, crossed eyes, tongue out, glasses askew, laughing underneath, warm background."
+  },
+  {
+    "id": "s26-rooftop-night",
+    "orient": "landscape",
+    "scene": "A city apartment rooftop at night: the couple lying side by side on a picnic blanket looking up at a starry sky, the mint instant camera on a small tripod beside them pointing up, warm string lights along the railing, the city glowing softly at the horizon; deep blue night sky filling the upper two thirds of the picture."
+  },
+  {
+    "id": "s27-rooftop-dawn",
+    "orient": "landscape",
+    "scene": "The same city rooftop at dawn, seen from behind the couple sitting wrapped together in one blanket at the railing, watching the city wake up: soft pink and gold sky, a flock of pigeons taking off, a distant train on a bridge, a few streetlights and windows still lit."
+  },
+  {
+    "id": "s28-square",
+    "orient": "landscape",
+    "scene": "New Year's Eve night in a crowded city square in winter: many people in coats and scarves, warm golden bokeh lights everywhere, a large blank LED screen on a building facade glowing softly with no numbers or letters; in the center foreground the couple seen from behind holding hands, she in a coral wool coat with a cream scarf and her black bob, he in a camel coat with a navy scarf; festive, expectant."
+  },
+  {
+    "id": "s29-breath",
+    "orient": "landscape",
+    "scene": "Close-up of the couple facing each other in the night crowd on New Year's Eve, cold air with visible breath clouds, warm golden bokeh behind; she wears a coral wool coat and cream scarf, he wears a camel coat and navy scarf; both smiling softly at each other, faces warmly lit."
+  },
+  {
+    "id": "s31-fireworks",
+    "orient": "landscape",
+    "scene": "Midnight fireworks bursting over the crowded city square, huge gold and pink bursts filling the night sky, people in silhouette cheering with raised arms, the couple at the center seen from behind, she raising the mint instant camera toward the sky; snow just beginning to fall."
+  },
+  {
+    "id": "s32-kiss",
+    "orient": "landscape",
+    "scene": "The couple kissing in near silhouette under huge golden fireworks in the night sky over the city square, he holds the mint instant camera up and out toward her; snowflakes beginning to fall, warm glow on their outlines; she in a coral coat, he in a camel coat."
+  },
+  {
+    "id": "p07-fireworks",
+    "orient": "portrait",
+    "scene": "An instant photo of golden and pink fireworks over a city square at midnight with the silhouettes of a cheering crowd at the bottom, slightly blurry, festive."
+  },
+  {
+    "id": "p08-her",
+    "orient": "portrait",
+    "scene": "An instant photo with flash look: the young woman in a coral wool coat and cream scarf laughing toward the camera under fireworks, snowflakes in her black bob, cheeks rosy from the cold."
+  },
+  {
+    "id": "s35-pocket",
+    "orient": "landscape",
+    "chars": false,
+    "scene": "Close-up of a young woman's cold hand slipping into the pocket of a man's camel wool coat, where his hand holds hers; snowflakes drifting, warm bokeh lights of a night street."
+  },
+  {
+    "id": "s37-snow-profile",
+    "orient": "landscape",
+    "scene": "Close-up of the couple's profiles facing each other in gently falling snow at night: snowflakes settle on her black bob and his black hair so their hair looks frosted white; both laughing softly with eyes nearly closed; coral coat and camel coat; warm golden bokeh behind."
+  },
+  {
+    "id": "s38-coffee",
+    "orient": "landscape",
+    "scene": "Cool gray-blue early morning in the small kitchen: the young woman stands holding two mugs of coffee and looks toward the front door at the right, which is just swinging closed; muted lonely mood, desaturated blue tones with only faint warmth from the mugs."
+  },
+  {
+    "id": "s39-dinner",
+    "orient": "landscape",
+    "scene": "Night in the small dining area: a table with two plates of dinner and one short candle; the young woman sits alone with her chin on her hand, looking at the empty chair across from her; a wall clock showing late; cool blue tones with a small warm candle glow."
+  },
+  {
+    "id": "s40-phone",
+    "orient": "landscape",
+    "chars": false,
+    "scene": "Close-up of a young woman's hands holding a smartphone above a dinner table at night; the phone screen is completely blank and softly glowing white with no text or icons; candle glow and plates out of focus; mustard cardigan sleeves."
+  },
+  {
+    "id": "s41-asleep",
+    "orient": "landscape",
+    "scene": "The young woman asleep with her head resting on her folded arms at the dinner table at midnight; the mint instant camera next to her; the candle burned out with a thin wisp of smoke; cool moonlight from the window; quiet and a little sad."
+  },
+  {
+    "id": "s43-empty-chair",
+    "orient": "landscape",
+    "chars": false,
+    "scene": "His empty wooden desk chair by the dark window at night, the laptop closed on the desk, a navy sweater hanging on the chair back, cool moonlight; outside the window the bare cherry branch with tiny buds; lonely and still."
+  },
+  {
+    "id": "s44-run",
+    "orient": "landscape",
+    "scene": "The young woman in her coral wool coat running at night through a city street toward the right, clutching the mint instant camera, long-exposure car light trails streaking past in orange and red, wet streets reflecting lights, determined expression, hair flying, cinematic motion."
+  },
+  {
+    "id": "s45-crosswalk",
+    "orient": "landscape",
+    "scene": "A night crosswalk under a row of bare cherry trees with tiny buds, warm streetlights; the young man in his camel coat running across from the far side toward the viewer, the pedestrian light turning green; wet asphalt reflecting the zebra stripes."
+  },
+  {
+    "id": "s46-mailbox",
+    "orient": "landscape",
+    "scene": "Night street under bare cherry trees: in the foreground the mint instant camera sits on top of a red mailbox with its small red self-timer light glowing; in the soft-focus background the couple embrace under a cherry tree lit by a streetlight; she in coral coat, he in camel coat."
+  },
+  {
+    "id": "s49-bloom",
+    "orient": "landscape",
+    "scene": "The same night street under a row of cherry trees exploding into full bloom in an instant: thousands of pale pink blossoms and swirling petals lit by a burst of white light, the couple embracing in the center, she in coral coat, he in camel coat; magical and breathtaking."
+  },
+  {
+    "id": "p10-last",
+    "orient": "portrait",
+    "scene": "An instant photo with flash look: the couple hugging cheek to cheek under cherry trees in full bloom at night, both smiling at the camera, petals floating around them, she in coral coat, he in camel coat."
+  },
+  {
+    "id": "s51-bloom-hug",
+    "orient": "landscape",
+    "scene": "The couple embracing under a canopy of full cherry blossoms at dawn, petals floating in the air, soft pink and golden light, her face on his shoulder, peaceful and full of love; medium wide shot."
+  },
+  {
+    "id": "s55-sunshower",
+    "orient": "landscape",
+    "scene": "A sun shower over a cherry-lined street at sunrise: rain and pink petals falling together through golden sunlight, a soft rainbow arching above the blossoming trees, the couple laughing and spinning in the middle of the street."
+  },
+  {
+    "id": "s57-curb",
+    "orient": "landscape",
+    "scene": "The couple sitting side by side on the curb under blooming cherry trees at sunrise, her head resting on his shoulder, petals on the street around them, seen from slightly in front, gentle golden light."
+  },
+  {
+    "id": "e01-paris",
+    "orient": "portrait",
+    "scene": "An instant photo: the couple in Paris at sunset in front of the Eiffel Tower, she laughing with arms open, he smiling, warm golden light."
+  },
+  {
+    "id": "e02-restaurant",
+    "orient": "portrait",
+    "scene": "An instant photo with flash look: the couple at a small candlelit restaurant table raising wine glasses, cozy warm light."
+  },
+  {
+    "id": "e03-wedding",
+    "orient": "portrait",
+    "scene": "An instant photo of a simple joyful wedding under blooming cherry trees: she in a simple white dress with her black bob and a flower crown, he in a navy suit with round glasses, laughing, petals falling."
+  },
+  {
+    "id": "e04-middle",
+    "orient": "portrait",
+    "scene": "An instant photo of the couple in their forties at the seaside, a few gray strands in their black hair, sharing an ice cream and laughing, summer light."
+  },
+  {
+    "id": "e05-old-reading",
+    "orient": "portrait",
+    "scene": "An instant photo of the couple in their seventies with white hair (her white bob, his white messy hair and round glasses) reading together on the coral sofa, warm lamp light."
+  },
+  {
+    "id": "s61-old-couple",
+    "orient": "landscape",
+    "scene": "The couple in their seventies with white hair (she has a white bob with bangs, he has white messy hair and round glasses, both in warm muted cardigans) standing in front of a warm cream wall completely covered with hundreds of instant photos; she holds the old mint instant camera, they smile at each other tenderly; soft golden afternoon light."
+  },
+  {
+    "id": "p11-old-table",
+    "orient": "portrait",
+    "scene": "An instant photo of the elderly couple with white hair sitting together at the same wooden desk by the window in golden light, smiling at the camera, his arm around her shoulders."
+  },
+  {
+    "id": "e06-hands",
+    "orient": "landscape",
+    "chars": false,
+    "scene": "Close-up of two elderly hands gently holding each other, wrinkled and warm, two thin gold rings, soft golden light, simple warm cream background."
+  },
+  {
+    "id": "k11-before",
+    "orient": "landscape",
+    "base": "art/s11-her-raise.png",
+    "scene": "Same over-the-shoulder view and room, but a moment earlier: the young woman is still holding the pastel mint-green instant camera low at chest level with both hands, hesitating, her head slightly lowered, the young man at the desk by the window with his back to her."
+  },
+  {
+    "id": "k12-back",
+    "orient": "landscape",
+    "base": "art/s12-turn-smile.png",
+    "scene": "Same framing, room and light, but a moment earlier: the young man sits at the desk with his back to the viewer, typing on the laptop, not turned yet; only the back of his messy black hair and his navy sweater are visible."
+  },
+  {
+    "id": "k12-mid",
+    "orient": "landscape",
+    "base": "art/s12-turn-smile.png",
+    "scene": "Same framing, room and light, in-between moment: the young man is halfway through turning around in his chair, looking back over his shoulder toward the viewer with a slightly surprised expression, about to smile."
+  },
+  {
+    "id": "k14-alone",
+    "orient": "landscape",
+    "base": "art/s14-hug.png",
+    "scene": "Same selfie framing and living room, but a moment earlier: the young woman alone holds the camera out for a selfie with a shy small smile; the young man is not in the picture yet, the space beside her shows only the sofa behind."
+  },
+  {
+    "id": "k18-spin",
+    "orient": "landscape",
+    "base": "art/s18-dance.png",
+    "scene": "Same living room and framing, a different dance moment: he twirls her around by one hand, her teal skirt flaring out, both laughing with heads thrown back, white feathers swirling in the sunbeams."
+  },
+  {
+    "id": "k25-before",
+    "orient": "landscape",
+    "base": "art/s25-funny.png",
+    "scene": "Same framing, sofa and light, a moment earlier: the young man looks up from a book toward the viewer with a gentle, slightly surprised natural smile, glasses straight, before making any funny face."
+  },
+  {
+    "id": "k32-gaze",
+    "orient": "landscape",
+    "base": "art/s32-kiss.png",
+    "scene": "Same framing, fireworks and city square, a moment earlier: the couple stand close facing each other, foreheads almost touching, gazing into each other's eyes just before the kiss, he still holds the mint instant camera at his side."
+  },
+  {
+    "id": "k44-stride",
+    "orient": "landscape",
+    "base": "art/s44-run.png",
+    "scene": "Same street, framing and light trails, but the other step of her running stride: her other leg forward and opposite arm swinging, coat and hair flying, same position in the frame."
+  },
+  {
+    "id": "k45-near",
+    "orient": "landscape",
+    "base": "art/s45-crosswalk.png",
+    "scene": "Same crosswalk and framing, a moment later: the young man has run much closer to the viewer, almost at the front of the frame, arms starting to open for a hug, out of breath and relieved."
+  },
+  {
+    "id": "k61-selfie",
+    "orient": "landscape",
+    "base": "art/s61-old-couple.png",
+    "scene": "Same wall of photos and framing, a moment later: the elderly woman holds the mint instant camera out at arm's length toward the viewer for a selfie, the elderly man leans his cheek close to hers, both smiling warmly at the camera."
+  },
+  {
+    "id": "s09-days-dream",
+    "orient": "landscape",
+    "chars": true,
+    "scene": "A dreamy pencil-sketch and loose watercolor imagined sequence of the couple's future everyday days, like a flipbook of small floating pages: breakfast together, walking under one umbrella, reading on the sofa, watering plants, watching stars; visible pencil lines, soft pastel washes, cream paper texture."
+  },
+  {
+    "id": "s34-skyline",
+    "orient": "landscape",
+    "chars": false,
+    "scene": "A wide view of the city at midnight on New Year's Eve seen from above the square: countless warm lit windows in apartment buildings, distant fireworks smoke, falling snow, deep blue night, cozy and alive."
+  },
+  {
+    "id": "s36-spin",
+    "orient": "landscape",
+    "scene": "The couple running hand in hand and spinning through the cheering New Year's Eve crowd, laughing, confetti and snow swirling around them, she in a coral wool coat and cream scarf, he in a camel coat and navy scarf, warm golden bokeh, motion and joy."
+  },
+  {
+    "id": "s47-run-back",
+    "orient": "landscape",
+    "scene": "Night street under bare cherry trees: the young woman in her coral coat runs from the red mailbox back toward the young man in his camel coat who opens his arms under the tree; in the blurred foreground the mint instant camera on the mailbox with its small red self-timer light."
+  },
+  {
+    "id": "s53-chest",
+    "orient": "landscape",
+    "scene": "Close-up under full cherry blossoms: the young woman rests her cheek against the young man's chest with eyes closed, listening to his heartbeat, his hand on her hair, petals floating, soft pink and golden light."
+  },
+  {
+    "id": "s56-lift",
+    "orient": "landscape",
+    "scene": "In a sun shower on a cherry-lined street, the young man lifts the young woman off the ground and spins her around, she laughs and cries at the same time with arms around his neck, rain and petals in golden light, a soft rainbow behind."
+  }
+]

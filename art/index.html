@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>出图进度 · 倒数 MV</title>
+<style>
+  :root { --bg: #f4efe6; --card: #fffaf2; --ink: #2b2638; --soft: #6b6478; --line: #e4dccd; --ok: #3f8a5c; --run: #c98a1e; --bad: #c0392b; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.6 "Noto Sans SC", "Microsoft YaHei", sans-serif; }
+  header { position: sticky; top: 0; background: rgba(244,239,230,.94); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); padding: 14px 16px; z-index: 2; }
+  h1 { margin: 0; font: 600 20px/1.3 "Noto Serif SC", serif; letter-spacing: .08em; }
+  .sum { margin-top: 6px; color: var(--soft); }
+  .bar { height: 6px; border-radius: 3px; background: var(--line); margin-top: 8px; overflow: hidden; }
+  .bar i { display: block; height: 100%; background: var(--ok); width: 0; transition: width .4s; }
+  main { padding: 16px; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+  .c { background: var(--card); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
+  .pic { aspect-ratio: 3 / 2; background: #e9e2d5; display: flex; align-items: center; justify-content: center; color: var(--soft); }
+  .pic.portrait { aspect-ratio: 3 / 2; }
+  .pic img { width: 100%; height: 100%; object-fit: contain; background: #1f1b26; }
+  .meta { padding: 10px 12px 12px; }
+  .id { font: 600 13px Consolas, monospace; display: flex; justify-content: space-between; gap: 8px; }
+  .st { font: 600 12px "Noto Sans SC", sans-serif; }
+  .st.ok { color: var(--ok); } .st.run { color: var(--run); } .st.bad { color: var(--bad); } .st.wait { color: var(--soft); }
+  .scene { margin-top: 6px; color: var(--soft); font-size: 12.5px; max-height: 7.5em; overflow: auto; }
+  details { margin: 0 16px 16px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+  pre { margin: 8px 0 0; white-space: pre-wrap; font: 12px/1.5 Consolas, monospace; color: var(--soft); max-height: 40vh; overflow: auto; }
+</style>
+</head>
+<body>
+<header>
+  <h1>出图进度 · 《倒数》MV</h1>
+  <div class="sum" id="sum">读取中…</div>
+  <div class="bar"><i id="bar"></i></div>
+</header>
+<details><summary>运行日志（每 15 秒刷新）</summary><pre id="log"></pre></details>
+<main id="grid"></main>
+<script>
+  const $ = id => document.getElementById(id);
+  const fresh = u => u + (u.includes('?') ? '&' : '?') + 't=' + Date.now();
+  async function load() {
+    let jobs = [], log = '';
+    try { jobs = await (await fetch(fresh('jobs.json'))).json(); } catch (e) { $('sum').textContent = '读不到 jobs.json'; return; }
+    try { log = await (await fetch(fresh('../.cache/gen-log.txt'))).text(); } catch (e) {}
+    const lines = log.trim().split('\n');
+    const state = {};
+    for (const l of lines) { const m = /(开始|完成|失败) ([A-Za-z0-9-]+)/.exec(l); if (m) state[m[2]] = m[1]; }
+    let ok = 0, run = 0, bad = 0;
+    const grid = $('grid'); grid.innerHTML = '';
+    for (const j of jobs) {
+      const s = state[j.id];
+      const cls = s === '完成' ? 'ok' : s === '开始' ? 'run' : s === '失败' ? 'bad' : 'wait';
+      const label = s === '完成' ? '已完成' : s === '开始' ? '正在画' : s === '失败' ? '超时，稍后重画' : '排队中';
+      if (cls === 'ok') ok++; else if (cls === 'run') run++; else if (cls === 'bad') bad++;
+      const card = document.createElement('div'); card.className = 'c';
+      const pic = document.createElement('div'); pic.className = 'pic';
+      if (cls === 'ok') { const im = new Image(); im.loading = 'lazy'; im.src = fresh(j.id + '.png'); im.onerror = () => { pic.textContent = '（图还没拷过来）'; }; pic.appendChild(im); }
+      else pic.textContent = cls === 'run' ? '正在画…' : cls === 'bad' ? '这张超时了' : '还没轮到';
+      const meta = document.createElement('div'); meta.className = 'meta';
+      meta.innerHTML = `<div class="id"><span>${NAMES[j.id] || CN[j.id] || '画面'}${j.orient === 'portrait' ? '（照片）' : ''}</span><span class="st ${cls}">${label}</span></div>`;
+      card.append(pic, meta); grid.appendChild(card);
+    }
+    $('sum').textContent = `共 ${jobs.length} 张：已完成 ${ok}，正在画 ${run}，超时 ${bad}，排队 ${jobs.length - ok - run - bad}。最后更新 ${lines.at(-1)?.slice(1, 9) || ''}`;
+    $('bar').style.width = (100 * ok / Math.max(1, jobs.length)) + '%';
+    $('log').textContent = lines.slice(-40).reverse().join('\n');
+  }
+  const NAMES = {"s01-drawer":"抽屉里的相机和相纸","s02-load":"装相纸","s03-window":"窗外的花苞","s03-window-dream":"窗外·梦里开花","s04-frames":"墙上的空相框","s04-frames-dream":"空相框·梦里的照片","s05-fridge":"冰箱上的餐厅剪报","s05-restaurant-dream":"梦里的烛光餐桌","s06-map":"地图与行李箱","s07-paris-dream":"梦里的巴黎","s07-desk-back":"他在书桌前的背影","s08-hand-ring":"他的手·梦里的戒指","s10-expiry":"相纸盒的保质期","s11-her-raise":"她举起相机","s12-turn-smile":"他回头一笑","p01-laugh":"照片①他在笑","s14-hug":"被他一把抱住自拍","p02-selfie":"照片②自拍","s16-chest":"照片贴在心口","s17-hands-warm":"双手捂热照片","s18-dance":"客厅里乱跳的舞","s19-couch-doodle":"沙发上画白头发","s20-sunrise":"山顶日出","p03-sunrise":"照片③日出","s21-rain":"雨里撑外套","s22-mugs":"两个并排的杯子","p04-mugs":"照片④两个杯子","s23-mirror":"镜子上的便利贴","s24-eye":"贴在取景器上的眼睛","s25-funny":"他做鬼脸","p05-funny":"照片⑤鬼脸","s26-rooftop-night":"屋顶看星","s27-rooftop-dawn":"屋顶的黎明","s28-square":"跨年夜的广场","s29-breath":"冷空气里的白雾","s31-fireworks":"零点烟花","s32-kiss":"烟花下的吻","p07-fireworks":"照片⑦烟花","p08-her":"照片⑧他拍的她","s35-pocket":"手揣进他的口袋","s37-snow-profile":"雪落白头","s38-coffee":"冷掉的咖啡","s39-dinner":"空着的椅子和晚餐","s40-phone":"打了又删的字","s41-asleep":"趴在桌上睡着","s43-empty-chair":"对着空椅子按快门","s44-run":"光轨里奔跑","s45-crosswalk":"斑马线上跑来的他","s46-mailbox":"邮筒上的自拍定时","s49-bloom":"满街花开","p10-last":"照片⑩最后一张","s51-bloom-hug":"花下相拥","s55-sunshower":"太阳雨与彩虹","s57-curb":"坐在路边","e01-paris":"后来·巴黎","e02-restaurant":"后来·那家餐厅","e03-wedding":"后来·婚礼","e04-middle":"后来·中年的海边","e05-old-reading":"后来·白发读书","s61-old-couple":"白发的两个人","p11-old-table":"灰照片终于显影","e06-hands":"两只握着的老人的手"};
+  // 后来补画的动作画面和新画面
+  const CN = { 'k11-before': '她犹豫着捧着相机', 'k12-back': '他背对着敲键盘', 'k12-mid': '他回头看了一眼', 'k14-alone': '她一个人自拍', 'k18-spin': '他拉着她转圈跳舞', 'k25-before': '他抬头笑了一下', 'k32-gaze': '烟花下两人对视', 'k44-stride': '她奔跑的另一步', 'k45-near': '他跑到跟前张开手', 'k61-selfie': '老奶奶举起相机自拍', 's09-days-dream': '梦里以后的日子', 's34-skyline': '跨年夜的万家灯火', 's36-spin': '在人群里转圈', 's47-run-back': '她跑回他身边', 's53-chest': '贴着他的胸口', 's56-lift': '他抱起她转圈' };
+  load(); setInterval(load, 15000);
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+[hidden] { display: none !important; }
+body { font-family: "Noto Serif SC", "Source Han Serif SC", "STSong", serif; color: #fbf3e6; -webkit-font-smoothing: antialiased; }
+#cv { position: fixed; inset: 0; width: 100vw; height: 100vh; display: block; }
+
+/* 开场：一张还没显影的拍立得 */
+#start { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0; padding: 0 16px; background: radial-gradient(ellipse at 50% 40%, #3a3554 0%, #1a1729 72%); transition: opacity .8s ease; z-index: 5; }
+#start.gone { opacity: 0; pointer-events: none; }
+.s-card { width: min(260px, 62vw); background: #fbf7ee; border-radius: 6px; padding: 14px 14px 0; box-shadow: 0 24px 60px rgba(0,0,0,.45), 0 2px 6px rgba(0,0,0,.25); transform: rotate(-3deg); }
+.s-photo { position: relative; aspect-ratio: 46 / 62; border-radius: 2px; background: linear-gradient(160deg, #c9ced8, #b9c0cc 55%, #d7d2cc); overflow: hidden; }
+.s-photo::after { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 70% 25%, rgba(255,236,200,.55), transparent 55%); animation: develop 4s ease-in-out infinite alternate; }
+@keyframes develop { from { opacity: .2; } to { opacity: .9; } }
+.s-count { position: absolute; right: 10px; bottom: 8px; font: 600 22px/1 Bahnschrift, "Segoe UI", sans-serif; letter-spacing: .04em; color: #fff; background: rgba(20,18,30,.55); border-radius: 6px; padding: 5px 8px; }
+.s-margin { height: 92px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #2b2638; }
+.s-title { font-size: 26px; font-weight: 600; letter-spacing: .3em; margin-right: -.3em; }
+.s-song { margin-top: 6px; font-size: 12px; letter-spacing: .25em; opacity: .6; }
+.s-status { margin-top: 34px; font-size: 14px; letter-spacing: .15em; opacity: .75; min-height: 20px; text-align: center; }
+.s-buttons { margin-top: 18px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+button { font: inherit; color: #2b2131; background: #f6c76b; border: 0; border-radius: 999px; padding: 12px 28px; font-size: 16px; letter-spacing: .2em; cursor: pointer; transition: transform .15s ease, opacity .2s; }
+button:hover:not(:disabled) { transform: translateY(-1px); }
+button:disabled { opacity: .35; cursor: default; }
+button.ghost { background: transparent; color: #fbf3e6; box-shadow: inset 0 0 0 1px rgba(251,243,230,.45); }
+.s-file { display: block; margin-top: 18px; font-size: 13px; opacity: .8; text-align: center; }
+.s-hint { margin-top: 30px; font-size: 12px; letter-spacing: .12em; opacity: .4; text-align: center; }
+
+#hud { position: fixed; left: 0; right: 0; bottom: 0; padding: 18px 22px 14px; background: linear-gradient(transparent, rgba(0,0,0,.55)); opacity: 0; transition: opacity .4s; z-index: 4; }
+#hud.show { opacity: 1; }
+#bar { position: relative; height: 4px; background: rgba(255,255,255,.18); border-radius: 2px; cursor: pointer; }
+#bar:hover { height: 6px; margin-top: -2px; }
+#played { position: absolute; left: 0; top: 0; bottom: 0; background: #f6c76b; border-radius: 2px; }
+#marks span { position: absolute; top: -3px; width: 2px; height: 10px; background: rgba(255,255,255,.45); }
+.row { display: flex; align-items: center; gap: 14px; margin-top: 10px; font-size: 13px; letter-spacing: .08em; }
+.row .spacer { flex: 1; }
+button.icon { background: transparent; color: #fbf3e6; padding: 4px 8px; font-size: 16px; letter-spacing: 0; }
+#chapter { opacity: .6; }
+#debug { position: fixed; left: 12px; top: 10px; font: 12px/1.5 Consolas, monospace; color: #9ff; background: rgba(0,0,0,.5); padding: 6px 10px; border-radius: 6px; z-index: 6; white-space: pre; }
